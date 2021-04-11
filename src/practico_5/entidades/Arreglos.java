@@ -16,7 +16,7 @@ public class Arreglos {
         for (int x=0; x<lista.length; x++) {
             suma = suma + lista[x];
         }
-        System.out.println(suma);
+        System.out.println("la suma de la lista es: " + suma);
     } 
 
     public static void busarMayor(int lista[][]) {
@@ -28,20 +28,10 @@ public class Arreglos {
                 }
             }
         }
-        System.out.println(mayor);    
+        System.out.println("el mayor número de la lista es: " + mayor);    
     }
     
-    public static void cuentaVocales(String cadena) {
-        int cantidadVocales = 0;
-        char caracteres[] = new char[cadena.length()];
-        for (int x=0; x<cadena.length(); x++) {
-            caracteres[x] = cadena.charAt(x);
-            if (caracteres[x]=='a' || caracteres[x]=='e' ||caracteres[x]=='i' || caracteres[x]=='o' ||caracteres[x]=='u') {
-                cantidadVocales++;
-            }
-        }
-        System.out.println(cantidadVocales); 
-    }
+
  
     public static void cuentaCaracter(String cadena, char caracter) {
         int cantidadCaracter = 0;
@@ -52,7 +42,21 @@ public class Arreglos {
                 cantidadCaracter++;
             }
         }
-        System.out.println(cantidadCaracter);     
+        System.out.println("la cadena ingresada tiene: " + cantidadCaracter +" caracteres iguales a: " + caracter);     
     }
     
+    public static void cuentaVocales(String cadena) {
+        int cantidadVocales = 0;
+        char vocales[] = {'a','e','i','o','u','A','E','I','O','U','á','é','í','ó','ú','Á','É','Í','Ó','Ú'};
+        char caracteres[] = new char[cadena.length()];
+        for (int x=0; x<cadena.length(); x++) {
+            caracteres[x] = cadena.charAt(x);
+            for (int y=0; y<vocales.length; y++) {
+                if (caracteres[x]==vocales[y]){
+                    cantidadVocales++;
+                }
+            }
+        }
+        System.out.println("la cadena ingresada tiene: " + cantidadVocales + " vocales"); 
+    }
 }

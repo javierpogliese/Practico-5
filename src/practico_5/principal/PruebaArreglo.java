@@ -18,15 +18,16 @@ public class PruebaArreglo {
    
     public static void main(String[] args) {
         
-        int unidimensional[] = {2,2,12,2,2};
+        int unidimensional[] = {2,4,12,82,26};
         Arreglos.sumarLista(unidimensional);
         
         int bidimensional[][] = {{14,17,9,1},{5,8,2,3,0}};
         Arreglos.busarMayor(bidimensional);
         
-        Arreglos.cuentaVocales("soy feliiiiiiiz!");
+        Arreglos.cuentaVocales("Lorem Ipsum dolor sit amet consectetur adipiscing elit placerát");
         
-        Arreglos.cuentaCaracter("soy feliiiiiiiz!", 'i');
+        Arreglos.cuentaCaracter("Lorem ipsum dolor sit amet consectetur adipiscing elit placerát", 'i');
+        
     }
     
 }
