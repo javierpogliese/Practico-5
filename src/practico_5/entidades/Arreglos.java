@@ -13,10 +13,13 @@ public class Arreglos {
    
     public static void sumarLista(int lista[]) {
         int suma = 0;
+        double promedio = 0;
         for (int x=0; x<lista.length; x++) {
             suma = suma + lista[x];
+            promedio = (double) suma/lista.length;
         }
         System.out.println("la suma de la lista es: " + suma);
+        System.out.println("el promedio de la lista es: " + promedio);
     } 
 
     public static void busarMayor(int lista[][]) {
