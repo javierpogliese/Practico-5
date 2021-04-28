@@ -22,11 +22,11 @@ public class Arreglos {
         System.out.println("el promedio de la lista es: " + promedio);
     } 
 
-    public static void busarMayor(int lista[][]) {
-        int mayor = 0;
+    public static void buscarMayor(int lista[][]) {
+        int mayor = lista[0][0];
         for (int f=0; f<lista.length; f++) {
             for (int c=0; c<lista[f].length; c++) {
-                if (lista[f][c] > mayor) {
+                if (lista[f][c] >= mayor) {
                     mayor = lista[f][c];
                 }
             }

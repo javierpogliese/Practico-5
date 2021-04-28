@@ -21,8 +21,8 @@ public class PruebaArreglo {
         int unidimensional[] = {2,4,12,82,26};
         Arreglos.sumarLista(unidimensional);
         
-        int bidimensional[][] = {{14,17,9,1},{5,8,2,3,0}};
-        Arreglos.busarMayor(bidimensional);
+        int bidimensional[][] = {{-14,-17,-9,-14},{-5,-8,-2,-3,-60}};
+        Arreglos.buscarMayor(bidimensional);
         
         Arreglos.cuentaVocales("Lorem Ipsum dolor sit amet consectetur adipiscing elit placerát");
         
